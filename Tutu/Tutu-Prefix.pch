@@ -1,0 +1,14 @@
+//
+//  Tutu-Prefix.pch
+//  Tutu
+//
+//  Created by Artyom Ryzhkov on 06/02/16.
+//  Copyright © 2016 Yulia Kashirina. All rights reserved.
+//
+
+#ifndef Tutu_Prefix_pch
+#define Tutu_Prefix_pch
+
+#import <MagicalRecord/MagicalRecord.h>
+
+#endif /* Tutu_Prefix_pch */
