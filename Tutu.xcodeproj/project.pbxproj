@@ -10,7 +10,7 @@
 		3710C79E42EC44E762155D8A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9B990FD1D0816A3EE9E57C /* libPods.a */; };
 		991A0D9D1C6612A000FF3B80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A0D9C1C6612A000FF3B80 /* main.m */; };
 		991A0DA01C6612A000FF3B80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A0D9F1C6612A000FF3B80 /* AppDelegate.m */; };
-		991A0DA31C6612A000FF3B80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A0DA21C6612A000FF3B80 /* ViewController.m */; };
+		991A0DA31C6612A000FF3B80 /* TTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A0DA21C6612A000FF3B80 /* TTMainViewController.m */; };
 		991A0DA61C6612A000FF3B80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991A0DA41C6612A000FF3B80 /* Main.storyboard */; };
 		991A0DA91C6612A000FF3B80 /* Tutu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 991A0DA71C6612A000FF3B80 /* Tutu.xcdatamodeld */; };
 		991A0DAB1C6612A000FF3B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 991A0DAA1C6612A000FF3B80 /* Assets.xcassets */; };
@@ -35,6 +35,12 @@
 		993D9C9F1C6670770016DB3C /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C9E1C6670770016DB3C /* City+CoreDataProperties.m */; };
 		993D9CA01C6670770016DB3C /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C9E1C6670770016DB3C /* City+CoreDataProperties.m */; };
 		993D9CA11C6670770016DB3C /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C9E1C6670770016DB3C /* City+CoreDataProperties.m */; };
+		993D9CA51C67ADC90016DB3C /* TTScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */; };
+		993D9CA61C67ADC90016DB3C /* TTScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */; };
+		993D9CA71C67ADC90016DB3C /* TTScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */; };
+		993D9CAA1C67B0A30016DB3C /* TTAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */; };
+		993D9CAB1C67B0A30016DB3C /* TTAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */; };
+		993D9CAC1C67B0A30016DB3C /* TTAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +66,8 @@
 		991A0D9C1C6612A000FF3B80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		991A0D9E1C6612A000FF3B80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		991A0D9F1C6612A000FF3B80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		991A0DA11C6612A000FF3B80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		991A0DA21C6612A000FF3B80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		991A0DA11C6612A000FF3B80 /* TTMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMainViewController.h; sourceTree = "<group>"; };
+		991A0DA21C6612A000FF3B80 /* TTMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMainViewController.m; sourceTree = "<group>"; };
 		991A0DA51C6612A000FF3B80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		991A0DA81C6612A000FF3B80 /* Tutu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tutu.xcdatamodel; sourceTree = "<group>"; };
 		991A0DAA1C6612A000FF3B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +91,10 @@
 		993D9C921C6668CF0016DB3C /* Tutu-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tutu-Prefix.pch"; sourceTree = "<group>"; };
 		993D9C9D1C6670770016DB3C /* City+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "City+CoreDataProperties.h"; path = "Model/City+CoreDataProperties.h"; sourceTree = "<group>"; };
 		993D9C9E1C6670770016DB3C /* City+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "City+CoreDataProperties.m"; path = "Model/City+CoreDataProperties.m"; sourceTree = "<group>"; };
+		993D9CA31C67ADC90016DB3C /* TTScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTScheduleViewController.h; sourceTree = "<group>"; };
+		993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTScheduleViewController.m; sourceTree = "<group>"; };
+		993D9CA81C67B0A30016DB3C /* TTAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAboutViewController.h; sourceTree = "<group>"; };
+		993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAboutViewController.m; sourceTree = "<group>"; };
 		BB6B9F73510C104312A5C905 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BF9B990FD1D0816A3EE9E57C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,12 +158,10 @@
 		991A0D9A1C6612A000FF3B80 /* Tutu */ = {
 			isa = PBXGroup;
 			children = (
+				993D9CA21C67A9050016DB3C /* ViewControllers */,
 				993D9C731C663F940016DB3C /* Model */,
 				991A0D9E1C6612A000FF3B80 /* AppDelegate.h */,
 				991A0D9F1C6612A000FF3B80 /* AppDelegate.m */,
-				991A0DA11C6612A000FF3B80 /* ViewController.h */,
-				991A0DA21C6612A000FF3B80 /* ViewController.m */,
-				991A0DA41C6612A000FF3B80 /* Main.storyboard */,
 				991A0DAA1C6612A000FF3B80 /* Assets.xcassets */,
 				991A0DAC1C6612A000FF3B80 /* LaunchScreen.storyboard */,
 				991A0DAF1C6612A000FF3B80 /* Info.plist */,
@@ -206,6 +214,20 @@
 				993D9C7A1C6663100016DB3C /* TTDataBaseManager.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		993D9CA21C67A9050016DB3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				993D9CA81C67B0A30016DB3C /* TTAboutViewController.h */,
+				993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */,
+				991A0DA11C6612A000FF3B80 /* TTMainViewController.h */,
+				991A0DA21C6612A000FF3B80 /* TTMainViewController.m */,
+				993D9CA31C67ADC90016DB3C /* TTScheduleViewController.h */,
+				993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */,
+				991A0DA41C6612A000FF3B80 /* Main.storyboard */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		EBD343440F7E68D047545CDC /* Pods */ = {
@@ -401,9 +423,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				991A0DA31C6612A000FF3B80 /* ViewController.m in Sources */,
+				991A0DA31C6612A000FF3B80 /* TTMainViewController.m in Sources */,
+				993D9CAA1C67B0A30016DB3C /* TTAboutViewController.m in Sources */,
 				991A0DA01C6612A000FF3B80 /* AppDelegate.m in Sources */,
 				991A0D9D1C6612A000FF3B80 /* main.m in Sources */,
+				993D9CA51C67ADC90016DB3C /* TTScheduleViewController.m in Sources */,
 				993D9C8C1C66644C0016DB3C /* Station+CoreDataProperties.m in Sources */,
 				991A0DA91C6612A000FF3B80 /* Tutu.xcdatamodeld in Sources */,
 				993D9C891C66644C0016DB3C /* City.m in Sources */,
@@ -419,7 +443,9 @@
 			files = (
 				993D9CA01C6670770016DB3C /* City+CoreDataProperties.m in Sources */,
 				993D9C8D1C66644C0016DB3C /* Station+CoreDataProperties.m in Sources */,
+				993D9CA61C67ADC90016DB3C /* TTScheduleViewController.m in Sources */,
 				993D9C901C66644C0016DB3C /* Station.m in Sources */,
+				993D9CAB1C67B0A30016DB3C /* TTAboutViewController.m in Sources */,
 				993D9C7C1C6663100016DB3C /* TTDataBaseManager.m in Sources */,
 				993D9C8A1C66644C0016DB3C /* City.m in Sources */,
 				991A0DB91C6612A000FF3B80 /* TutuTests.m in Sources */,
@@ -432,7 +458,9 @@
 			files = (
 				993D9CA11C6670770016DB3C /* City+CoreDataProperties.m in Sources */,
 				993D9C8E1C66644C0016DB3C /* Station+CoreDataProperties.m in Sources */,
+				993D9CA71C67ADC90016DB3C /* TTScheduleViewController.m in Sources */,
 				993D9C911C66644C0016DB3C /* Station.m in Sources */,
+				993D9CAC1C67B0A30016DB3C /* TTAboutViewController.m in Sources */,
 				993D9C7D1C6663100016DB3C /* TTDataBaseManager.m in Sources */,
 				993D9C8B1C66644C0016DB3C /* City.m in Sources */,
 				991A0DC41C6612A000FF3B80 /* TutuUITests.m in Sources */,

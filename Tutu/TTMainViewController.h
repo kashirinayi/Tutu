@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TTMainViewController.h
 //  Tutu
 //
 //  Created by Artyom Ryzhkov on 06/02/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TTMainViewController : UIViewController
 
 
 @end
