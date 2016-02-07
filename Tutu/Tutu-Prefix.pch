@@ -9,6 +9,8 @@
 #ifndef Tutu_Prefix_pch
 #define Tutu_Prefix_pch
 
+#define MAS_SHORTHAND
+#import <Masonry/Masonry.h>
 #import <MagicalRecord/MagicalRecord.h>
 
 #endif /* Tutu_Prefix_pch */
