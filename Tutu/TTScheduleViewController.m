@@ -7,8 +7,11 @@
 //
 
 #import "TTScheduleViewController.h"
+#import "TTAllStationsViewController.h"
 
 @interface TTScheduleViewController ()
+
+@property (strong, nonatomic) TTAllStationsViewController *allStationsVC;
 
 @end
 
@@ -16,7 +19,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.allStationsVC = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(TTAllStationsViewController.class)];
+}
+
+- (IBAction)stationFromButtonPressed:(id)sender {
+    self.allStationsVC.stationType = TTStationFrom;
+    UIViewController *vc = self.view.window.rootViewController;
+    [vc presentViewController:self.allStationsVC animated:YES completion:nil];
+}
+
+- (IBAction)stationToButtonPressed:(id)sender {
+    self.allStationsVC.stationType = TTStationTo;
+    UIViewController *vc = self.view.window.rootViewController;
+    [vc presentViewController:self.allStationsVC animated:YES completion:nil];
 }
 
 

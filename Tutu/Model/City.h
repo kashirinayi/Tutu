@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Station;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface City : NSManagedObject
+
+@property (nullable, nonatomic, retain) NSArray<Station *> *orderedStations;
 
 //+ (City *)findCityById:(NSString *)Id;
 + (City *)upsertCityFromDictionary:(NSDictionary *)dictionary;

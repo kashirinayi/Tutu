@@ -17,30 +17,36 @@
 		991A0DAE1C6612A000FF3B80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991A0DAC1C6612A000FF3B80 /* LaunchScreen.storyboard */; };
 		991A0DB91C6612A000FF3B80 /* TutuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A0DB81C6612A000FF3B80 /* TutuTests.m */; };
 		991A0DC41C6612A000FF3B80 /* TutuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A0DC31C6612A000FF3B80 /* TutuUITests.m */; };
+		99290F971C67DFA500377086 /* TTAllStationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99290F961C67DFA500377086 /* TTAllStationsTableViewCell.m */; };
+		99290F981C67DFA500377086 /* TTAllStationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99290F961C67DFA500377086 /* TTAllStationsTableViewCell.m */; };
+		99290F991C67DFA500377086 /* TTAllStationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99290F961C67DFA500377086 /* TTAllStationsTableViewCell.m */; };
+		99290F9E1C67E8B500377086 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 99290F9B1C67E8B500377086 /* City.m */; };
+		99290F9F1C67E8B500377086 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 99290F9B1C67E8B500377086 /* City.m */; };
+		99290FA01C67E8B500377086 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 99290F9B1C67E8B500377086 /* City.m */; };
+		99290FA11C67E8B500377086 /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 99290F9D1C67E8B500377086 /* City+CoreDataProperties.m */; };
+		99290FA21C67E8B500377086 /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 99290F9D1C67E8B500377086 /* City+CoreDataProperties.m */; };
+		99290FA31C67E8B500377086 /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 99290F9D1C67E8B500377086 /* City+CoreDataProperties.m */; };
 		993D9C751C663FDE0016DB3C /* allStations.json in Resources */ = {isa = PBXBuildFile; fileRef = 993D9C741C663FDE0016DB3C /* allStations.json */; };
 		993D9C761C663FDE0016DB3C /* allStations.json in Resources */ = {isa = PBXBuildFile; fileRef = 993D9C741C663FDE0016DB3C /* allStations.json */; };
 		993D9C771C663FDE0016DB3C /* allStations.json in Resources */ = {isa = PBXBuildFile; fileRef = 993D9C741C663FDE0016DB3C /* allStations.json */; };
 		993D9C7B1C6663100016DB3C /* TTDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C7A1C6663100016DB3C /* TTDataBaseManager.m */; };
 		993D9C7C1C6663100016DB3C /* TTDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C7A1C6663100016DB3C /* TTDataBaseManager.m */; };
 		993D9C7D1C6663100016DB3C /* TTDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C7A1C6663100016DB3C /* TTDataBaseManager.m */; };
-		993D9C891C66644C0016DB3C /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C811C66644C0016DB3C /* City.m */; };
-		993D9C8A1C66644C0016DB3C /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C811C66644C0016DB3C /* City.m */; };
-		993D9C8B1C66644C0016DB3C /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C811C66644C0016DB3C /* City.m */; };
 		993D9C8C1C66644C0016DB3C /* Station+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C831C66644C0016DB3C /* Station+CoreDataProperties.m */; };
 		993D9C8D1C66644C0016DB3C /* Station+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C831C66644C0016DB3C /* Station+CoreDataProperties.m */; };
 		993D9C8E1C66644C0016DB3C /* Station+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C831C66644C0016DB3C /* Station+CoreDataProperties.m */; };
 		993D9C8F1C66644C0016DB3C /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C851C66644C0016DB3C /* Station.m */; };
 		993D9C901C66644C0016DB3C /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C851C66644C0016DB3C /* Station.m */; };
 		993D9C911C66644C0016DB3C /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C851C66644C0016DB3C /* Station.m */; };
-		993D9C9F1C6670770016DB3C /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C9E1C6670770016DB3C /* City+CoreDataProperties.m */; };
-		993D9CA01C6670770016DB3C /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C9E1C6670770016DB3C /* City+CoreDataProperties.m */; };
-		993D9CA11C6670770016DB3C /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9C9E1C6670770016DB3C /* City+CoreDataProperties.m */; };
 		993D9CA51C67ADC90016DB3C /* TTScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */; };
 		993D9CA61C67ADC90016DB3C /* TTScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */; };
 		993D9CA71C67ADC90016DB3C /* TTScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */; };
 		993D9CAA1C67B0A30016DB3C /* TTAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */; };
 		993D9CAB1C67B0A30016DB3C /* TTAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */; };
 		993D9CAC1C67B0A30016DB3C /* TTAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */; };
+		993D9CAF1C67D40E0016DB3C /* TTAllStationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CAE1C67D40E0016DB3C /* TTAllStationsViewController.m */; };
+		993D9CB01C67D40E0016DB3C /* TTAllStationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CAE1C67D40E0016DB3C /* TTAllStationsViewController.m */; };
+		993D9CB11C67D40E0016DB3C /* TTAllStationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993D9CAE1C67D40E0016DB3C /* TTAllStationsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,22 +85,26 @@
 		991A0DBF1C6612A000FF3B80 /* TutuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		991A0DC31C6612A000FF3B80 /* TutuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TutuUITests.m; sourceTree = "<group>"; };
 		991A0DC51C6612A000FF3B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99290F951C67DFA500377086 /* TTAllStationsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAllStationsTableViewCell.h; sourceTree = "<group>"; };
+		99290F961C67DFA500377086 /* TTAllStationsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAllStationsTableViewCell.m; sourceTree = "<group>"; };
+		99290F9A1C67E8B500377086 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = City.h; path = Model/City.h; sourceTree = "<group>"; };
+		99290F9B1C67E8B500377086 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = City.m; path = Model/City.m; sourceTree = "<group>"; };
+		99290F9C1C67E8B500377086 /* City+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "City+CoreDataProperties.h"; path = "Model/City+CoreDataProperties.h"; sourceTree = "<group>"; };
+		99290F9D1C67E8B500377086 /* City+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "City+CoreDataProperties.m"; path = "Model/City+CoreDataProperties.m"; sourceTree = "<group>"; };
 		993D9C741C663FDE0016DB3C /* allStations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allStations.json; sourceTree = "<group>"; };
 		993D9C791C6663100016DB3C /* TTDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDataBaseManager.h; sourceTree = "<group>"; };
 		993D9C7A1C6663100016DB3C /* TTDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDataBaseManager.m; sourceTree = "<group>"; };
-		993D9C801C66644C0016DB3C /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = City.h; path = Model/City.h; sourceTree = "<group>"; };
-		993D9C811C66644C0016DB3C /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = City.m; path = Model/City.m; sourceTree = "<group>"; };
 		993D9C821C66644C0016DB3C /* Station+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Station+CoreDataProperties.h"; path = "Model/Station+CoreDataProperties.h"; sourceTree = "<group>"; };
 		993D9C831C66644C0016DB3C /* Station+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Station+CoreDataProperties.m"; path = "Model/Station+CoreDataProperties.m"; sourceTree = "<group>"; };
 		993D9C841C66644C0016DB3C /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Station.h; path = Model/Station.h; sourceTree = "<group>"; };
 		993D9C851C66644C0016DB3C /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Station.m; path = Model/Station.m; sourceTree = "<group>"; };
 		993D9C921C6668CF0016DB3C /* Tutu-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tutu-Prefix.pch"; sourceTree = "<group>"; };
-		993D9C9D1C6670770016DB3C /* City+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "City+CoreDataProperties.h"; path = "Model/City+CoreDataProperties.h"; sourceTree = "<group>"; };
-		993D9C9E1C6670770016DB3C /* City+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "City+CoreDataProperties.m"; path = "Model/City+CoreDataProperties.m"; sourceTree = "<group>"; };
 		993D9CA31C67ADC90016DB3C /* TTScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTScheduleViewController.h; sourceTree = "<group>"; };
 		993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTScheduleViewController.m; sourceTree = "<group>"; };
 		993D9CA81C67B0A30016DB3C /* TTAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAboutViewController.h; sourceTree = "<group>"; };
 		993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAboutViewController.m; sourceTree = "<group>"; };
+		993D9CAD1C67D40E0016DB3C /* TTAllStationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAllStationsViewController.h; sourceTree = "<group>"; };
+		993D9CAE1C67D40E0016DB3C /* TTAllStationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAllStationsViewController.m; sourceTree = "<group>"; };
 		BB6B9F73510C104312A5C905 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BF9B990FD1D0816A3EE9E57C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -200,10 +210,10 @@
 		993D9C731C663F940016DB3C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				993D9C9D1C6670770016DB3C /* City+CoreDataProperties.h */,
-				993D9C9E1C6670770016DB3C /* City+CoreDataProperties.m */,
-				993D9C801C66644C0016DB3C /* City.h */,
-				993D9C811C66644C0016DB3C /* City.m */,
+				99290F9A1C67E8B500377086 /* City.h */,
+				99290F9B1C67E8B500377086 /* City.m */,
+				99290F9C1C67E8B500377086 /* City+CoreDataProperties.h */,
+				99290F9D1C67E8B500377086 /* City+CoreDataProperties.m */,
 				993D9C821C66644C0016DB3C /* Station+CoreDataProperties.h */,
 				993D9C831C66644C0016DB3C /* Station+CoreDataProperties.m */,
 				993D9C841C66644C0016DB3C /* Station.h */,
@@ -219,12 +229,16 @@
 		993D9CA21C67A9050016DB3C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				993D9CA81C67B0A30016DB3C /* TTAboutViewController.h */,
-				993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */,
 				991A0DA11C6612A000FF3B80 /* TTMainViewController.h */,
 				991A0DA21C6612A000FF3B80 /* TTMainViewController.m */,
+				993D9CA81C67B0A30016DB3C /* TTAboutViewController.h */,
+				993D9CA91C67B0A30016DB3C /* TTAboutViewController.m */,
 				993D9CA31C67ADC90016DB3C /* TTScheduleViewController.h */,
 				993D9CA41C67ADC90016DB3C /* TTScheduleViewController.m */,
+				993D9CAD1C67D40E0016DB3C /* TTAllStationsViewController.h */,
+				993D9CAE1C67D40E0016DB3C /* TTAllStationsViewController.m */,
+				99290F951C67DFA500377086 /* TTAllStationsTableViewCell.h */,
+				99290F961C67DFA500377086 /* TTAllStationsTableViewCell.m */,
 				991A0DA41C6612A000FF3B80 /* Main.storyboard */,
 			);
 			name = ViewControllers;
@@ -423,15 +437,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99290FA11C67E8B500377086 /* City+CoreDataProperties.m in Sources */,
+				99290F971C67DFA500377086 /* TTAllStationsTableViewCell.m in Sources */,
 				991A0DA31C6612A000FF3B80 /* TTMainViewController.m in Sources */,
+				99290F9E1C67E8B500377086 /* City.m in Sources */,
 				993D9CAA1C67B0A30016DB3C /* TTAboutViewController.m in Sources */,
 				991A0DA01C6612A000FF3B80 /* AppDelegate.m in Sources */,
 				991A0D9D1C6612A000FF3B80 /* main.m in Sources */,
 				993D9CA51C67ADC90016DB3C /* TTScheduleViewController.m in Sources */,
+				993D9CAF1C67D40E0016DB3C /* TTAllStationsViewController.m in Sources */,
 				993D9C8C1C66644C0016DB3C /* Station+CoreDataProperties.m in Sources */,
 				991A0DA91C6612A000FF3B80 /* Tutu.xcdatamodeld in Sources */,
-				993D9C891C66644C0016DB3C /* City.m in Sources */,
-				993D9C9F1C6670770016DB3C /* City+CoreDataProperties.m in Sources */,
 				993D9C7B1C6663100016DB3C /* TTDataBaseManager.m in Sources */,
 				993D9C8F1C66644C0016DB3C /* Station.m in Sources */,
 			);
@@ -441,14 +457,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				993D9CA01C6670770016DB3C /* City+CoreDataProperties.m in Sources */,
+				99290FA21C67E8B500377086 /* City+CoreDataProperties.m in Sources */,
 				993D9C8D1C66644C0016DB3C /* Station+CoreDataProperties.m in Sources */,
+				99290F981C67DFA500377086 /* TTAllStationsTableViewCell.m in Sources */,
 				993D9CA61C67ADC90016DB3C /* TTScheduleViewController.m in Sources */,
 				993D9C901C66644C0016DB3C /* Station.m in Sources */,
 				993D9CAB1C67B0A30016DB3C /* TTAboutViewController.m in Sources */,
 				993D9C7C1C6663100016DB3C /* TTDataBaseManager.m in Sources */,
-				993D9C8A1C66644C0016DB3C /* City.m in Sources */,
 				991A0DB91C6612A000FF3B80 /* TutuTests.m in Sources */,
+				993D9CB01C67D40E0016DB3C /* TTAllStationsViewController.m in Sources */,
+				99290F9F1C67E8B500377086 /* City.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,14 +474,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				993D9CA11C6670770016DB3C /* City+CoreDataProperties.m in Sources */,
+				99290FA31C67E8B500377086 /* City+CoreDataProperties.m in Sources */,
 				993D9C8E1C66644C0016DB3C /* Station+CoreDataProperties.m in Sources */,
+				99290F991C67DFA500377086 /* TTAllStationsTableViewCell.m in Sources */,
 				993D9CA71C67ADC90016DB3C /* TTScheduleViewController.m in Sources */,
 				993D9C911C66644C0016DB3C /* Station.m in Sources */,
 				993D9CAC1C67B0A30016DB3C /* TTAboutViewController.m in Sources */,
 				993D9C7D1C6663100016DB3C /* TTDataBaseManager.m in Sources */,
-				993D9C8B1C66644C0016DB3C /* City.m in Sources */,
 				991A0DC41C6612A000FF3B80 /* TutuUITests.m in Sources */,
+				993D9CB11C67D40E0016DB3C /* TTAllStationsViewController.m in Sources */,
+				99290FA01C67E8B500377086 /* City.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
