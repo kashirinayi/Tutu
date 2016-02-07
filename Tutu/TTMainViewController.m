@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) TTScheduleViewController *scheduleVC;
 @property (strong, nonatomic) TTAboutViewController *aboutVC;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
 @end
 
@@ -22,21 +23,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self addScheduleVC];
-    [self addAboutVC];
-}
-
-- (void)addScheduleVC {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    self.scheduleVC = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(TTScheduleViewController.class)];
-    [self.view addSubview:self.scheduleVC.view];
-}
-
-- (void)addAboutVC {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    self.aboutVC = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(TTAboutViewController.class)];
+    self.scheduleVC = (TTScheduleViewController *)[self addViewController:TTScheduleViewController.class];
+    self.aboutVC = (TTAboutViewController *)[self addViewController:TTAboutViewController.class];
     self.aboutVC.view.hidden = YES;
-    [self.view addSubview:self.aboutVC.view];
+}
+
+- (UIViewController *)addViewController:(Class)vcClass {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(vcClass)];
+    [self.view addSubview:vc.view];
+    
+    [vc.view makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.toolbar.mas_bottom);
+        make.leading.equalTo(self.view.mas_leading);
+        make.trailing.equalTo(self.view.mas_trailing);
+        make.bottom.equalTo(self.view.mas_bottom);
+    }];
+    
+    return vc;
 }
 
 - (IBAction)segmentControlChanged:(id)sender {
