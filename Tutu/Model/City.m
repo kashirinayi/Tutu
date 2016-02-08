@@ -10,20 +10,6 @@
 
 @implementation City
 
-@synthesize orderedStations = _orderedStations;
-
-- (NSArray *)orderedStations {
-    if (!_orderedStations) {
-        // упорядочиваем станции по имени
-        NSSortDescriptor *stationTitleSorting = [[NSSortDescriptor alloc] initWithKey:NSStringFromSelector(@selector(stationTitle)) ascending:YES];
-        NSArray *orderedStations = [[self.stations allObjects] sortedArrayUsingDescriptors:@[stationTitleSorting]];
-        _orderedStations = orderedStations;
-    }
-
-    return _orderedStations;
-}
-
-
 + (City *)findCityById:(NSNumber *)Id {
     
     if (!Id)

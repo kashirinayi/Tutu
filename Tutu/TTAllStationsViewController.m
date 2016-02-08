@@ -7,9 +7,11 @@
 //
 
 #import "TTAllStationsViewController.h"
-#import "TTAllStationsTableViewCell.h"
+#import "TTStationViewController.h"
 #import "City+CoreDataProperties.h"
 #import "Station+CoreDataProperties.h"
+
+#define TTAllStationsTableViewCell @"TTAllStationsTableViewCell"
 
 @interface TTAllStationsViewController ()
 <   UITableViewDataSource,
@@ -52,9 +54,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(TTAllStationsTableViewCell.class)];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TTAllStationsTableViewCell];
     if (!cell) {
-        cell = [[TTAllStationsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass(TTAllStationsTableViewCell.class)];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TTAllStationsTableViewCell];
     }
     
     Station *station = self.filteredStations[indexPath.row];
@@ -72,6 +74,15 @@
     [self.delegate setStation:self.filteredStations[indexPath.row] forDirection:self.stationType];
     
     [self cancelButtonPressed:nil];
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    TTStationViewController *vc = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(TTStationViewController.class)];
+    vc.station = self.filteredStations[indexPath.row];
+    
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 #pragma mark - UISearchResultsUpdating
