@@ -156,6 +156,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="stationFrom" destination="Rmh-g6-HRv" id="NFx-xF-UhI"/>
+                        <outlet property="stationTo" destination="WCb-9M-NcU" id="7Vo-vh-w7B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ip2-jV-Ja2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

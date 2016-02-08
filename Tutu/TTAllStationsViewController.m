@@ -17,7 +17,7 @@
     UISearchResultsUpdating,
     UISearchBarDelegate    >
 
-@property (strong, nonatomic) NSArray *cities;
+@property (strong, nonatomic) NSArray *filteredStations;
 
 @property (strong, nonatomic) UISearchController *searchController;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -32,36 +32,23 @@
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     self.searchController.searchResultsUpdater = self;
     self.searchController.dimsBackgroundDuringPresentation = NO;
-    self.searchController.searchBar.scopeButtonTitles = @[NSLocalizedString(@"ScopeButtonCountry",@"Country"),
-                                                          NSLocalizedString(@"ScopeButtonCapital",@"Capital")];
     self.searchController.searchBar.delegate = self;
     
     self.tableView.tableHeaderView = self.searchController.searchBar;
-    self.definesPresentationContext = YES;
-    [self.searchController.searchBar sizeToFit];
     
-    if (self.stationType == TTStationFrom) {
-        self.cities = [City MR_findByAttribute:NSStringFromSelector(@selector(isCityFrom)) withValue:@YES];
-    }
-    else {
-        self.cities = [City MR_findByAttribute:NSStringFromSelector(@selector(isCityTo)) withValue:@YES];
-    }
+    [self initWithAllStations];
+}
+
+- (void)initWithAllStations {
+    NSPredicate *predicate = [Station predicateForCityType:self.stationType];
+    self.filteredStations = [Station MR_findAllSortedBy:NSStringFromSelector(@selector(stationTitle)) ascending:YES withPredicate:predicate];
 }
 
 #pragma mark - UITableViewDataSource
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.cities.count;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    City *city = self.cities[section];
-    return city.stations.count;
-}
-
-- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    City *city = self.cities[section];
-    return [NSString stringWithFormat:@"%@, %@", city.countryTitle, city.cityTitle];
+    
+    return self.filteredStations.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -70,8 +57,7 @@
         cell = [[TTAllStationsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass(TTAllStationsTableViewCell.class)];
     }
     
-    City *city = self.cities[indexPath.section];
-    Station *station = city.orderedStations[indexPath.row];
+    Station *station = self.filteredStations[indexPath.row];
     cell.textLabel.text = station.stationTitle;
     
     return cell;
@@ -81,19 +67,39 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self.delegate setStation:self.filteredStations[indexPath.row] forDirection:self.stationType];
+    
+    [self cancelButtonPressed:nil];
 }
-
 
 #pragma mark - UISearchResultsUpdating
 
-- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
-{
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    
     NSString *searchString = searchController.searchBar.text;
-//    [self searchForText:searchString scope:searchController.searchBar.selectedScopeButtonIndex];
+    [self searchForText:searchString];
+    
     [self.tableView reloadData];
 }
 
+- (void)searchForText:(NSString *)searchText {
+    
+    if ([searchText isEqualToString:@""]) {
+        [self initWithAllStations];
+        return;
+    }
+    
+    NSPredicate *cityPredicate = [Station predicateForCityType:self.stationType];
+    NSPredicate *searchPredicate = [NSPredicate predicateWithFormat:@"%K contains[cd] %@", NSStringFromSelector(@selector(stationTitle)), searchText];
+    NSPredicate *predicate = [NSCompoundPredicate andPredicateWithSubpredicates:@[cityPredicate, searchPredicate]];
+    
+    self.filteredStations = [Station MR_findAllSortedBy:NSStringFromSelector(@selector(stationTitle)) ascending:YES withPredicate:predicate];
+}
+
 - (IBAction)cancelButtonPressed:(id)sender {
+    self.searchController.active = NO;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

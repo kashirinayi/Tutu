@@ -12,5 +12,6 @@
 #define MAS_SHORTHAND
 #import <Masonry/Masonry.h>
 #import <MagicalRecord/MagicalRecord.h>
+#import <BlocksKit/BlocksKit.h>
 
 #endif /* Tutu_Prefix_pch */

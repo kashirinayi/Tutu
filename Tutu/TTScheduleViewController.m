@@ -9,9 +9,12 @@
 #import "TTScheduleViewController.h"
 #import "TTAllStationsViewController.h"
 
-@interface TTScheduleViewController ()
+@interface TTScheduleViewController () <TTSearchStationProtocol>
 
 @property (strong, nonatomic) TTAllStationsViewController *allStationsVC;
+
+@property (weak, nonatomic) IBOutlet UITextField *stationFrom;
+@property (weak, nonatomic) IBOutlet UITextField *stationTo;
 
 @end
 
@@ -27,6 +30,7 @@
 - (IBAction)stationFromButtonPressed:(id)sender {
     self.allStationsVC.stationType = TTStationFrom;
     UIViewController *vc = self.view.window.rootViewController;
+    self.allStationsVC.delegate = self;
     [vc presentViewController:self.allStationsVC animated:YES completion:nil];
 }
 
@@ -34,6 +38,14 @@
     self.allStationsVC.stationType = TTStationTo;
     UIViewController *vc = self.view.window.rootViewController;
     [vc presentViewController:self.allStationsVC animated:YES completion:nil];
+}
+
+#pragma mark - TTSearchStationProtocol
+- (void)setStation:(Station *)station forDirection:(TTStationType)stationType {
+    if (stationType == TTStationFrom)
+        self.stationFrom.text = station.stationTitle;
+    else
+        self.stationTo.text = station.stationTitle;
 }
 
 

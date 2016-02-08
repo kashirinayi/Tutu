@@ -7,14 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Station.h"
 
-typedef NS_ENUM(NSUInteger, TTStationType) {
-    TTStationFrom,
-    TTStationTo
-};
+@protocol TTSearchStationProtocol <NSObject>
+
+- (void)setStation:(Station *)station forDirection:(TTStationType)stationType;
+
+@end
 
 @interface TTAllStationsViewController : UIViewController
 
+@property (strong, nonatomic) id <TTSearchStationProtocol> delegate;
 @property (assign, nonatomic) TTStationType stationType;
 
 @end

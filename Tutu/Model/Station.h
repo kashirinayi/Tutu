@@ -13,9 +13,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, TTStationType) {
+    TTStationFrom,
+    TTStationTo
+};
+
 @interface Station : NSManagedObject
 
 + (Station *)upsertStationFromDictionary:(NSDictionary *)dictionary;
+
++ (NSPredicate *)predicateForCityType:(TTStationType)stationType;
 
 @end
 

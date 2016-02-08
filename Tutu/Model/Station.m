@@ -45,5 +45,22 @@
     [[NSManagedObjectContext MR_defaultContext] MR_saveOnlySelfAndWait];
 }
 
++ (NSPredicate *)predicateForCityType:(TTStationType)stationType {
+    
+    if (stationType == TTStationFrom)
+        return [Station predicateStationsCityFrom];
+    else
+        return [Station predicateStationsCityTo];
+}
+
++ (NSPredicate *)predicateStationsCityFrom {
+    NSPredicate *p = [NSPredicate predicateWithFormat:@"%K.%K = %@", NSStringFromSelector(@selector(city)), NSStringFromSelector(@selector(isCityFrom)), @YES];
+    return p;
+}
+
++ (NSPredicate *)predicateStationsCityTo {
+    NSPredicate *p = [NSPredicate predicateWithFormat:@"%K.%K = %@", NSStringFromSelector(@selector(city)), NSStringFromSelector(@selector(isCityTo)), @YES];
+    return p;
+}
 
 @end
