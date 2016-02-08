@@ -15,6 +15,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *stationFrom;
 @property (weak, nonatomic) IBOutlet UITextField *stationTo;
+@property (weak, nonatomic) IBOutlet UITextField *dateTextField;
+@property (strong, nonatomic) UIDatePicker *datePicker;
+
 
 @end
 
@@ -25,6 +28,25 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     self.allStationsVC = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(TTAllStationsViewController.class)];
+    
+    self.datePicker = [[UIDatePicker alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.dateTextField.frame), CGRectGetWidth(self.view.frame), 150)];
+    self.datePicker.datePickerMode = UIDatePickerModeDate;
+    self.datePicker.minimumDate = [NSDate date];
+    self.dateTextField.inputView = self.datePicker;
+    
+    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 44)];
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Готово" style:UIBarButtonItemStyleDone target:self action:@selector(saveDate:)];
+    toolbar.items = @[doneButton];
+    self.dateTextField.inputAccessoryView = toolbar;
+}
+
+- (void)saveDate:(id)sender {
+    
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    dateFormatter.dateFormat = @"dd.MM.yyyy";
+    self.dateTextField.text = [dateFormatter stringFromDate:self.datePicker.date];
+    
+    [self.dateTextField resignFirstResponder];
 }
 
 - (IBAction)stationFromButtonPressed:(id)sender {
@@ -47,6 +69,5 @@
     else
         self.stationTo.text = station.stationTitle;
 }
-
 
 @end
